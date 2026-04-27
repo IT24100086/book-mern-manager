@@ -1,11 +1,5 @@
 import express from "express";
-import {
-  createBook,
-  getBookById,
-  getBooks,
-  updateBook,
-} from "../controllers/bookController.js";
-
+import { getBooks, getBookById, createBook, updateBook, deleteBook } from "../controllers/bookController.js";
 const router = express.Router();
 
 router.get("/", getBooks);
